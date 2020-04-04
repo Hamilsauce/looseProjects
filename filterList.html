@@ -123,7 +123,8 @@ const makeEditable = target => {
 }
 document.querySelectorAll('td').forEach(td => {
   td.addEventListener('dblClick', e => {
-    makeEditable(e.target);
+    makeEditable(target);
+    console.log('in func')
   })
 })
 
