@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="content">
+        <div class="form-container">
+            <form action="" class="userform">
+                <input type="button" class="getAudioFolder" value="get audio folder">
+                <input type="button" class="getSongData" value="get audio SongData">
+                <input type="button" class="postSongsData" value="post SongData">
+            </form>
+        </div>
+        <div class="data-display">
+
+        </div>
+    </section>
+<script>
+let reposData;
+const updateDisplay = data => {
+    document.querySelector('.data-display').textContent = data;
+}
+
+fetch('https://api.github.com/users/Hamilsauce/repos')
+    .then(response => response.json())
+    .then(data => {
+        reposData = data;
+    })
+
+document.querySelector('.getAudioFolder').addEventListener('click', e => {
+    e.preventDefault();
+    const dataDiv = document.querySelector('.data-display');
+
+    fetch('https://api.github.com/repos/Hamilsauce/hamilsauce.github.io/contents/audio')
+        .then(response => response.json())
+        .then(data => {
+            reposData = data;
+            console.log(reposData);
+        })
+})
+document.querySelector('.getSongData').addEventListener('click', e => {
+    e.preventDefault();
+    const dataDiv = document.querySelector('.data-display');
+
+    fetch('https://hamilsauce.github.io/audio/SongData.json')
+        .then(response => response.json())
+        .then(data => {
+            // reposData = data;
+            console.log(data);
+            reposData = data;
+            updateDisplay(reposData);
+        })
+})
+document.querySelector('.postSongsData').addEventListener('click', e => {
+    e.preventDefault();
+    const dataDiv = document.querySelector('.data-display');
+
+    fetch('https://cors-anywhere.herokuapp.com/https://hamilsauce.github.io/audio/SongData.json', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(reposData)
+
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log('success', data);
+    })
+    .catch(error => {
+        console.error('error', error);
+    });
+})
+
+
+</script>
+</body>
+</html>
