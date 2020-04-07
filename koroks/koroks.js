@@ -29,7 +29,8 @@ export const koroks = [
     "createdBy": "Super-Zambezi",
     "lat": -0.3028564453125,
     "lng": 0.49676513671875,
-    "mapRef": null,
+    "map
+    Ref": null,
     "mapSlug": "hyrule",
     "markerName": "Korok Seed - Dive into circle of lily pads",
     "markerSlug": "korok-seed462",
@@ -10095,7 +10096,7 @@ export const koroks = [
     "mapSlug": "hyrule",
     "markerName": "Korok Seed - Follow the flower trail",
     "markerSlug": "korok-seed-flower-chase2",
-    "objectSlug": "the-legend-of-zelda-breath-of-the-wild",
+    "objectSlug": "the-"legend-of-zelda-breath-of-the-wild",
     "typeSlug": "korok-seed",
     "updatedBy": "Ragga_Fragga",
     "wikiPage": "Ridgeland_Korok_Seed_22",
