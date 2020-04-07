@@ -1,10 +1,13 @@
+// import {
+//   koroks
+// } from "./koroks.js";
 import {
-    koroks
-} from "./koroks.js";
+  koroks
+} from "./shortList.js";
 
 const korokCount = koroks.length;
 const slimTheSeeds = () => {
-  const keepList = [
+    const keepList = [
     'lat',
     'id',
     'lng',
@@ -16,19 +19,20 @@ const slimTheSeeds = () => {
       .map(korok => {
         let id = koroks.indexOf(korok);
         korok.id = id;
-        
+
         let slimSeed = Object.entries(korok)
           .filter(([prop, val]) => {
             if (keepList.includes(prop) === true) {
-               return [prop, val];
+              return [prop, val];
             }
           }).reduce((obj, item) => {
               obj[item[0]] = item[1];
-            return obj;
+              return obj;
           }, {});
         return slimSeed;
       });
     return slimSeeds
-  
-    let cleanedKoroks = slimTheSeeds();
-    console.log(cleanedKoroks);
+}
+    
+let cleanedKoroks = slimTheSeeds();
+console.log(cleanedKoroks)
