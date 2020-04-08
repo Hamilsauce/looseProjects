@@ -33,6 +33,10 @@ const slimTheSeeds = () => {
       });
     return slimSeeds
 }
-    
+
 let cleanedKoroks = slimTheSeeds();
 console.log(cleanedKoroks)
+
+
+
+j

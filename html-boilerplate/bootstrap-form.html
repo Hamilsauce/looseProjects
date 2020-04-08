@@ -2,17 +2,76 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    .app {
+      display: grid;
+      flex-direction: column;
+      max-width: 500px;
+      height: 100%;
+      margin: auto;
+      padding: 10px 15px;
+      box-sizing: border-box;
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      height: 100%;
+      margin: auto;
+      padding: 10px 15px;
+      box-sizing: border-box;
+    }
+
+    .userform {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 500px;
+      height: 100%;
+      margin: auto;
+      padding: 10px 15px;
+      box-sizing: border-box;
+    }
+
+    .form-group {
+      /* display: grid;
+     grid-template-columns: 1fr; */
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      height: 100%;
+      margin: auto;
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
 <body>
-  <form>
-    <div class="form-group">
-      <label for="formGroupExampleInput">Example label</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+  <div class="app">
+    <div class="form-container">
+
+      <form class="userform">
+        <div class="form-group">
+          <label for="formGroupExampleInput">File name</label>
+          <input type="text" class="textInput" id="formGroupExampleInput" placeholder="Example input">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Other shit</label>
+          <input type="text" class="textInput" id="formGroupExampleInput2" placeholder="Another input">
+        </div>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="formGroupExampleInput2">Another label</label>
-      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-    </div>
-  </form>
+  </div>
 </body>
 
 </html>
