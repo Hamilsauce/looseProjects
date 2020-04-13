@@ -5,14 +5,14 @@ const mapDelimiter = delimiter => {
   const del = delimiter.toLowerCase();
   let delim;
 
-  if (del === 'tab') {
+  if (del == '\t') {
     delim = '\t';
-  } else if (del === 'space') {
+  } else if (del == ' ') {
     delim = ' ';
-  } else if (del === 'comma') {
+  } else if (del == ',') {
     delim = ',';
   } else {
-    delim = -1; // error if not matched
+    delim == del;
   }
   return delim;
 }

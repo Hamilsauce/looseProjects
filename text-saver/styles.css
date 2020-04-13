@@ -7,7 +7,7 @@ html, body {
 }
 .app {
  box-sizing: border-box;
- 
+
  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: 1fr 4fr 7fr;
@@ -38,8 +38,8 @@ padding: 10px; background: rgba(235, 235, 245, 1);
  border: 1px solid blue;
  height: 100%;
  min-height: 150px;
- 
- 
+
+
 }
 .delimInput {
  font-size: 1.1em;
@@ -73,5 +73,8 @@ padding: 10px; background: rgba(235, 235, 245, 1);
 }
 .contentContainer {
  border: 1px solid blue;
- 
+ width: 350px;
+ height: 400px;
+ overflow: auto;
+
 }
