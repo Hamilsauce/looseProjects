@@ -36,7 +36,3 @@ const slimTheSeeds = () => {
 
 let cleanedKoroks = slimTheSeeds();
 console.log(cleanedKoroks)
-
-
-
-j
