@@ -1,55 +1,59 @@
-//const fs = require('fs');
-/*
-export const songData =
-  `ID,songTitle,Plays,likes,Duration,Published,Comments
-1,Battle Star,12,4,02:45,4 days ago,3
-3,The Gypsy,12,5,08:00,6 years ago,0
-4,A Moaner's Chain Gang,51,2,02:18,18 days ago,2`;
+// log last updated: 12.26.19 - refactored some for each loops into a map and reduce
 
-*/
-export const csvToJson = (input, delimiter) => {
+//* mapDelimiter: attempts to map parameter string input for delimiter to a character;
+const mapDelimiter = delimiter => {
+  const del = delimiter.toLowerCase();
+  let delim;
 
- const csvToObjs = source => {
-  let records = [];
-  let colNames;
-  let csv = source.split('\n');
-  let delim = ',';
-  if (delimiter === 'comma') {
-   delim = ',';
-  } else if (delimiter === 'tab') {
-   delim = '\t';
-  }
-  else if (delimiter === 'space') {
-   delim = ' ';
+  if (del === 'tab') {
+    delim = '\t';
+  } else if (del === 'space') {
+    delim = ' ';
+  } else if (del === 'comma') {
+    delim = ',';
   } else {
-   delim = delim;
+    delim = -1; // error if not matched
   }
-  console.log(delim);
-  colNames = csv.shift().trim().split(delim);
-console.log(colNames);
-  csv.forEach(row => {
-   let newRecord = {};
-
-   records.push(setData(colNames, row.split(delim), newRecord));
-  });
-  console.log('records: ')
-  console.log(records)
-  return records;
- }
-
- const setData = (names, data, newRec) => {
-  let i = 0;
-
-  data.forEach(d => {
-   newRec[names[i]] = d;
-   i++;
-  });
-  return newRec;
- }
-
- return csvToObjs(input, delimiter)
+  return delim;
 }
 
+//* convertToObjects: does all the record-by-record row-to-obj work; output: array of records as objects
+const convertToObjects = (colNames, dataBody, delim) => {
+  let recordsAsObjects = dataBody
+    .map(row => {
+      let i = 0;
 
+      const recordObj = row.split(delim)
+        .reduce((record, recordFields) => {
+          record[colNames[i]] = recordFields;
+          ++i;
+          return record;
+        }, {});
+      return recordObj;
+    });
+  return recordsAsObjects;
+}
 
-{ csvToJson }
+//* csvToJson: the module, provides interface/API layer for external use
+export const csvToJson = (input, delimiter = 'comma') => {
+  const csvToObjs = source => { //organizing function, maps API inputs with various function params
+    let err = '';
+    const delim = mapDelimiter(delimiter);
+
+    if (delim === -1) {
+      err = 'Error: invalid delimiter provided.';
+      console.error(err);
+      return err;
+    } else {
+      let dataBody = source.split('\n');
+      const colNames = dataBody.shift().trim().split(delim);
+
+      return convertToObjects(colNames, dataBody, delim);
+    }
+  }
+  return JSON.stringify(csvToObjs(input), null, " ", 4);
+}
+
+{
+  csvToJson
+}
