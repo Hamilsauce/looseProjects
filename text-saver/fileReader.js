@@ -28,8 +28,12 @@ const store = {
 };
 
 const readFile = async (e) => {
-    let fileList = await e.target.files[0]
+  let fileList = await e.target.files[0]
+  let name = fileList.name.split('.')[0]
+  store.saveData('filename', name)
+
     let data = await fileList.text()
+
     return data;
   }
   (() => {
@@ -70,6 +74,19 @@ document.querySelector('.submitButton')
     const display = document.querySelector('.contentDisplay')
     const output = csvToJson(store.fileText, ',');
 
+    display.textContent = output;
+    console.log(output);
+  })
+
+document.querySelector('.saveButton')
+  .addEventListener('click', e => {
+    e.preventDefault();
+    const display = document.querySelector('.contentDisplay')
+
+    const text = display.textContent;
+    const filename =`${store.filename}.json`;
+    const file = new Blob([text], {type: "application/json"})
+    saveAs(file, filename)
     display.textContent = output;
     console.log(output);
   })

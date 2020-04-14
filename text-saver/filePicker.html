@@ -21,6 +21,7 @@
    <form class="userform">
     <label for="delimInput">Pick a delimiter</label>
     <select name="delimInput" id="delimInput" class="delimInput" value=",">
+     <option value=","></option>
      <option value=",">comma</option>
      <option value="\t">tab</option>
      <option value=" ">space</option>
@@ -35,9 +36,10 @@
     <input class="filePicker" type="file" name="filePicker" id="filePicker" value="" />
     <!-- <input class="filePicker" type="file"> -->
     <input type="submit" class="submitButton" name="submitButton" id="submitButton" value="Convert!" />
-   </form>
-  </div>
-  <section class="contentContainer">
+  </form>
+</div>
+<section class="contentContainer">
+  <input type="button" class="saveButton" name="saveButton" id="saveButton" value="Save" />
    <pre class="contentDisplay">
     See output here
    </pre>
