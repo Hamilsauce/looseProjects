@@ -7,8 +7,8 @@ const mapDelimiter = delimiter => {
 
   if (del == '\t') {
     delim = '\t';
-  } else if (del == '\s') {
-    delim = '\s';
+  } else if (del == ' ') {
+    delim = ' ';
   } else if (del == ',') {
     delim = ',';
   } else {
@@ -35,7 +35,7 @@ const convertToObjects = (colNames, dataBody, delim) => {
 }
 
 //* csvToJson: the module, provides interface/API layer for external use
-export const csvToJson = (input, delimiter) => {
+export const csvToJson = (input, delimiter = 'comma') => {
   const csvToObjs = source => { //organizing function, maps API inputs with various function params
     let err = '';
     const delim = mapDelimiter(delimiter);
@@ -45,8 +45,8 @@ export const csvToJson = (input, delimiter) => {
       console.error(err);
       return err;
     } else {
-      let dataBody = source.split('\n').map(line => line.trim());
-      const colNames = dataBody.shift().trim().split(delim).map(line => line.trim());
+      let dataBody = source.split('\n');
+      const colNames = dataBody.shift().trim().split(delim);
 
       return convertToObjects(colNames, dataBody, delim);
     }
