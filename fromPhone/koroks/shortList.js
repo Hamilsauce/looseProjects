@@ -1,5 +1,4 @@
-{
-  "koroks": [
+export const koroks = [
     {
       "createdBy": "Yojeline",
       "lat": -0.57977294921875,
@@ -13,8 +12,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_1",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.52203369140625,
       "lng": 0.4034423828125,
@@ -27,12 +25,12 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_10",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3028564453125,
       "lng": 0.49676513671875,
-      "mapRef": null,
+      "map
+      Ref ": null,
       "mapSlug": "hyrule",
       "markerName": "Korok Seed - Dive into circle of lily pads",
       "markerSlug": "korok-seed462",
@@ -41,8 +39,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_100",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3048095703125,
       "lng": 0.48480224609375,
@@ -55,8 +52,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_101",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.31939697265625,
       "lng": 0.4998779296875,
@@ -69,8 +65,7 @@
       "updatedBy": "Super-Zambezi",
       "wikiPage": "Central_Hyrule_Korok_Seed_102",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.330078125,
       "lng": 0.49432373046875,
@@ -83,8 +78,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_103",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3349609375,
       "lng": 0.47943115234375,
@@ -97,8 +91,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_104",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3330078125,
       "lng": 0.4776611328125,
@@ -111,8 +104,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_105",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.32806396484375,
       "lng": 0.485107421875,
@@ -125,8 +117,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_106",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3175048828125,
       "lng": 0.47857666015625,
@@ -139,8 +130,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_107",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.31768798828125,
       "lng": 0.473388671875,
@@ -153,8 +143,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_108",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.328369140625,
       "lng": 0.4949951171875,
@@ -167,8 +156,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_109",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "lgb052012",
       "lat": -0.53411865234375,
       "lng": 0.4117431640625,
@@ -181,8 +169,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_11",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Onijii",
       "lat": -0.3150634765625,
       "lng": 0.48614501953125,
@@ -195,8 +182,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_110",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.313232421875,
       "lng": 0.48614501953125,
@@ -209,8 +195,7 @@
       "updatedBy": "Super-Zambezi",
       "wikiPage": "Central_Hyrule_Korok_Seed_111",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.31134033203125,
       "lng": 0.48614501953125,
@@ -223,8 +208,7 @@
       "updatedBy": "Super-Zambezi",
       "wikiPage": "Central_Hyrule_Korok_Seed_112",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.5162353515625,
       "lng": 0.400634765625,
@@ -237,8 +221,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_12",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.5047607421875,
       "lng": 0.4049072265625,
@@ -251,8 +234,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_13",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.4989013671875,
       "lng": 0.4010009765625,
@@ -265,8 +247,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_14",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "kiben007",
       "lat": -0.49395751953125,
       "lng": 0.4078369140625,
@@ -279,8 +260,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_15",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "lgb052012",
       "lat": -0.49639892578125,
       "lng": 0.4180908203125,
@@ -293,8 +273,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_16",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.5018310546875,
       "lng": 0.385498046875,
@@ -307,8 +286,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_17",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "mnybrngr",
       "lat": -0.495361328125,
       "lng": 0.37017822265625,
@@ -321,8 +299,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_18",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.488525390625,
       "lng": 0.377197265625,
@@ -335,8 +312,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_19",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "anthonycthe3",
       "lat": -0.57907104492188,
       "lng": 0.3482666015625,
@@ -349,8 +325,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_2",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "mnybrngr",
       "lat": -0.475830078125,
       "lng": 0.3946533203125,
@@ -363,8 +338,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_20",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "mnybrngr",
       "lat": -0.46649169921875,
       "lng": 0.387939453125,
@@ -377,8 +351,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_21",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.46453857421875,
       "lng": 0.4150390625,
@@ -391,8 +364,7 @@
       "updatedBy": "Super-Zambezi",
       "wikiPage": "Central_Hyrule_Korok_Seed_22",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "mnybrngr",
       "lat": -0.44927978515625,
       "lng": 0.4061279296875,
@@ -405,8 +377,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_23",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Toraya",
       "lat": -0.44342041015625,
       "lng": 0.38616943359375,
@@ -419,8 +390,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_24",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.43353271484375,
       "lng": 0.3857421875,
@@ -433,8 +403,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_25",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Linken42",
       "lat": -0.4281005859375,
       "lng": 0.40850830078125,
@@ -447,8 +416,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_26",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.38543701171875,
       "lng": 0.428955078125,
@@ -461,8 +429,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_27",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "AxelSeven",
       "lat": -0.3685302734375,
       "lng": 0.41412353515625,
@@ -475,8 +442,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_28",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3997802734375,
       "lng": 0.4879150390625,
@@ -489,8 +455,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_29",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Andruidus",
       "lat": -0.5579833984375,
       "lng": 0.36370849609375,
@@ -503,8 +468,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_3",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.42352294921875,
       "lng": 0.4700927734375,
@@ -517,8 +481,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_30",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "valoon4",
       "lat": -0.4195556640625,
       "lng": 0.4619140625,
@@ -531,8 +494,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_31",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.42279052734375,
       "lng": 0.44244384765625,
@@ -545,8 +507,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_32",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.41973876953125,
       "lng": 0.44415283203125,
@@ -559,8 +520,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_33",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.4296875,
       "lng": 0.42840576171875,
@@ -573,8 +533,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_34",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.44073486328125,
       "lng": 0.44378662109375,
@@ -587,8 +546,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_35",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.44720458984375,
       "lng": 0.47601318359375,
@@ -601,8 +559,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_36",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.46270751953125,
       "lng": 0.45947265625,
@@ -615,8 +572,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_37",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.48956298828125,
       "lng": 0.45654296875,
@@ -629,8 +585,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_38",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.49249267578125,
       "lng": 0.44049072265625,
@@ -643,8 +598,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_39",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "JohnDoeDE",
       "lat": -0.54766845703125,
       "lng": 0.35040283203125,
@@ -657,8 +611,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_4",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "kiben007",
       "lat": -0.51034545898438,
       "lng": 0.4549560546875,
@@ -671,8 +624,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_40",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.53887939453125,
       "lng": 0.43902587890625,
@@ -685,8 +637,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_41",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.53863525390625,
       "lng": 0.44927978515625,
@@ -699,8 +650,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_42",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "kemoshaw",
       "lat": -0.5284423828125,
       "lng": 0.46734619140625,
@@ -713,8 +663,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_43",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.5211181640625,
       "lng": 0.47088623046875,
@@ -727,8 +676,7 @@
       "updatedBy": null,
       "wikiPage": "Central_Hyrule_Korok_Seed_44",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.54229736328125,
       "lng": 0.51495361328125,
@@ -741,8 +689,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_45",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "deossen",
       "lat": -0.5211181640625,
       "lng": 0.537353515625,
@@ -755,8 +702,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_46",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.5059814453125,
       "lng": 0.51348876953125,
@@ -769,8 +715,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_47",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.5072021484375,
       "lng": 0.50054931640625,
@@ -783,8 +728,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_48",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.495361328125,
       "lng": 0.49749755859375,
@@ -797,8 +741,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_49",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "JohnDoeDE",
       "lat": -0.53961181640625,
       "lng": 0.3555908203125,
@@ -811,8 +754,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_5",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "01proco",
       "lat": -0.4912109375,
       "lng": 0.53106689453125,
@@ -825,8 +767,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_50",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.46490478515625,
       "lng": 0.49896240234375,
@@ -839,8 +780,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_51",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.4583740234375,
       "lng": 0.54022216796875,
@@ -853,8 +793,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_52",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "isaiasf",
       "lat": -0.43603515625,
       "lng": 0.5213623046875,
@@ -867,8 +806,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_53",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.42388916015625,
       "lng": 0.51141357421875,
@@ -881,8 +819,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_54",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Evilengine",
       "lat": -0.4224853515625,
       "lng": 0.54595947265625,
@@ -895,8 +832,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_55",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "anthonycthe3",
       "lat": -0.4268798828125,
       "lng": 0.56805419921875,
@@ -909,8 +845,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_56",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.4114990234375,
       "lng": 0.583984375,
@@ -923,8 +858,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_57",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.39154052734375,
       "lng": 0.56866455078125,
@@ -937,8 +871,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_58",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.3643798828125,
       "lng": 0.5565185546875,
@@ -951,8 +884,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_59",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "MinnoTaurus",
       "lat": -0.5181884765625,
       "lng": 0.3836669921875,
@@ -965,8 +897,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_6",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.349853515625,
       "lng": 0.574951171875,
@@ -979,8 +910,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_60",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "lgb052012",
       "lat": -0.34613037109375,
       "lng": 0.588623046875,
@@ -993,8 +923,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_61",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Mimic019",
       "lat": -0.34075927734375,
       "lng": 0.56658935546875,
@@ -1007,8 +936,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_62",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3336181640625,
       "lng": 0.57421875,
@@ -1021,8 +949,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_63",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.32818603515625,
       "lng": 0.55694580078125,
@@ -1035,8 +962,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_64",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3072509765625,
       "lng": 0.5640869140625,
@@ -1049,8 +975,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_65",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.320556640625,
       "lng": 0.53851318359375,
@@ -1063,8 +988,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_66",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "AxelSeven",
       "lat": -0.321533203125,
       "lng": 0.5277099609375,
@@ -1077,8 +1001,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_67",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3438720703125,
       "lng": 0.53558349609375,
@@ -1091,8 +1014,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_68",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Mimic019",
       "lat": -0.35296630859375,
       "lng": 0.5478515625,
@@ -1105,8 +1027,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_69",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.525634765625,
       "lng": 0.3880615234375,
@@ -1119,8 +1040,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_7",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.352294921875,
       "lng": 0.517333984375,
@@ -1133,8 +1053,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_70",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.37060546875,
       "lng": 0.51898193359375,
@@ -1147,8 +1066,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_71",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.372314453125,
       "lng": 0.5174560546875,
@@ -1161,8 +1079,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_72",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.38525390625,
       "lng": 0.4951171875,
@@ -1175,8 +1092,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_73",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3857421875,
       "lng": 0.4866943359375,
@@ -1189,8 +1105,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_74",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.38525390625,
       "lng": 0.4825439453125,
@@ -1203,8 +1118,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_75",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.3887939453125,
       "lng": 0.4591064453125,
@@ -1217,8 +1131,7 @@
       "updatedBy": "Peer-IGN",
       "wikiPage": "Central_Hyrule_Korok_Seed_76",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.37371826171875,
       "lng": 0.436279296875,
@@ -1231,8 +1144,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_77",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.370361328125,
       "lng": 0.4476318359375,
@@ -1245,8 +1157,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_78",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.359130859375,
       "lng": 0.4488525390625,
@@ -1259,8 +1170,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_79",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "lgb052012",
       "lat": -0.53857421875,
       "lng": 0.3924560546875,
@@ -1273,8 +1183,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_8",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.35809326171875,
       "lng": 0.43597412109375,
@@ -1287,8 +1196,7 @@
       "updatedBy": "Super-Zambezi",
       "wikiPage": "Central_Hyrule_Korok_Seed_80",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.35296630859375,
       "lng": 0.43927001953125,
@@ -1301,8 +1209,7 @@
       "updatedBy": null,
       "wikiPage": "Central_Hyrule_Korok_Seed_81",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.351806640625,
       "lng": 0.42218017578125,
@@ -1315,8 +1222,7 @@
       "updatedBy": "Super-Zambezi",
       "wikiPage": "Central_Hyrule_Korok_Seed_82",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "AxelSeven",
       "lat": -0.33447265625,
       "lng": 0.4222412109375,
@@ -1329,8 +1235,7 @@
       "updatedBy": "Super-Zambezi",
       "wikiPage": "Central_Hyrule_Korok_Seed_83",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "SantelaDelta",
       "lat": -0.3096923828125,
       "lng": 0.4388427734375,
@@ -1343,8 +1248,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_84",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "SantelaDelta",
       "lat": -0.32403564453125,
       "lng": 0.44854736328125,
@@ -1357,8 +1261,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_85",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.3297119140625,
       "lng": 0.447265625,
@@ -1371,8 +1274,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_86",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.34619140625,
       "lng": 0.45416259765625,
@@ -1385,8 +1287,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_87",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3525390625,
       "lng": 0.48529052734375,
@@ -1399,8 +1300,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_88",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.355224609375,
       "lng": 0.48681640625,
@@ -1413,8 +1313,7 @@
       "updatedBy": "Peer-IGN",
       "wikiPage": "Central_Hyrule_Korok_Seed_89",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "valoon4",
       "lat": -0.53619384765625,
       "lng": 0.3968505859375,
@@ -1427,8 +1326,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_9",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "AxelSeven",
       "lat": -0.35125732421875,
       "lng": 0.486572265625,
@@ -1441,8 +1339,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_90",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.34063720703125,
       "lng": 0.4852294921875,
@@ -1455,8 +1352,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_91",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.34161376953125,
       "lng": 0.48663330078125,
@@ -1469,8 +1365,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_92",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3408203125,
       "lng": 0.488037109375,
@@ -1483,8 +1378,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_93",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.3369140625,
       "lng": 0.4957275390625,
@@ -1497,8 +1391,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_94",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.3375244140625,
       "lng": 0.47406005859375,
@@ -1511,8 +1404,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_95",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Ragga_Fragga",
       "lat": -0.33038330078125,
       "lng": 0.468994140625,
@@ -1525,8 +1417,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_96",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.31793212890625,
       "lng": 0.47454833984375,
@@ -1539,8 +1430,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_97",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.30712890625,
       "lng": 0.4742431640625,
@@ -1553,8 +1443,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_98",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.302490234375,
       "lng": 0.48095703125,
@@ -1567,8 +1456,7 @@
       "updatedBy": "Ragga_Fragga",
       "wikiPage": "Central_Hyrule_Korok_Seed_99",
       "__typename": "MapMarker"
-    },
-    {
+}, {
       "createdBy": "Super-Zambezi",
       "lat": -0.69303385540843,
       "lng": 0.67388916574419,
@@ -1581,6 +1469,4 @@
       "updatedBy": null,
       "wikiPage": "Cooking,_Materials,_and_Food",
       "__typename": "MapMarker"
-    }
-  ]
-}
+}]

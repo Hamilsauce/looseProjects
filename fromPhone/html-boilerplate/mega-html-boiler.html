@@ -1,0 +1,276 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Boilerplate</title>
+<style>
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,
+          padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+  }
+
+  body {
+    line-height: 1;
+  }
+ol,
+  ul {
+    list-style: none;
+  }
+blockquote,
+  q {
+    quotes: none;
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  ins {
+    text-decoration: none;
+  }
+
+  del {
+    text-decoration: line-through;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+caption,th,
+  td {
+    text-align: left;
+  }
+input,
+  textarea {
+    margin: 0;
+  }
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,
+  textarea {
+font-family: Helvetica, Arial, FreeSans, sans-serif;
+  }
+
+  /* HEADINGS */
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* TEXT ELEMENTS */p,ul,ol,
+  dl {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+ul,
+  ol {
+    padding-left: 20px;
+  }
+
+  ul {
+    list-style-type: circle;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  dl dt {
+    font-weight: bold;
+  }
+
+  dl dd {
+    padding-left: 10px;
+  }
+abbr,
+  acronym {
+    text-decoration: underline;
+  }
+
+  a {
+    color: #009;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  blockquote {
+    margin: 20px 0;
+    padding-left: 10px;
+  }
+
+  dfn {
+    font-style: italic;
+    font-weight: bold;
+  }
+pre,
+  code {
+    margin: 20px 0;
+    white-space: pre;
+  }
+pre,code,
+  tt {
+    font: 10px monospace;
+    line-height: 20px;
+  }
+
+  tt {
+    display: block;
+    margin: 20px 0;
+    line-height: 20px;
+  }
+
+  table {
+    margin-bottom: 20px;
+  }
+th,
+  td {
+    padding: 5px 10px 5px 0;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  fieldset {
+    padding: 9px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+  }
+
+  legend {
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  textarea {
+    padding: 10px;
+  }
+</style>
+</head>
+
+<body>
+  <div id="page">
+    <div id="header">
+      <h1>Boilerplate usage</h1>
+    </div>
+
+    <div id="navigation">
+      <ul class="tabs">
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Ipsum</a></li>
+        <li><a href="#">Dolor</a></li>
+        <li><a href="#">Consectetur</a></li>
+        <li><a href="#">Eiusmod</a></li>
+      </ul>
+    </div>
+
+    <div id="body" class="wrapper">
+      <div id="introduction">
+        <h2>hForm</h2>
+        <form action="." method="post" class="hform">
+          <fieldset>
+            <legend>Comment form</legend>
+            <p><label>Name</label>
+              <input type="text" name="name" value="" id="name"></p>
+            <p><label>Url</label>
+              <input type="text" name="address" value="" id="address"></p>
+            <p><label>Email</label>
+              <input type="text" name="city" value="" id="city"></p>
+            <p><label>Comment</label>
+              <textarea name="comment" rows="8" cols="40"></textarea></p>
+            <p class="checkbox"><input type="checkbox" name="remember" value="" id="remember"> <label>Remember</label>
+            </p>
+          </fieldset>
+
+          <p><input type="submit" name="submit" value="Save" class="button"></p>
+        </form>
+
+        <h2>vForm</h2>
+        <form action="." method="post" class="vform">
+          <fieldset>
+            <legend>Comment form</legend>
+            <p><label>Name</label>
+              <input type="text" name="name" value="" id="name"></p>
+            <p><label>Url</label>
+              <input type="text" name="address" value="" id="address"></p>
+            <p><label>Email</label>
+              <input type="text" name="city" value="" id="city"></p>
+            <p><label>Comment</label>
+              <textarea name="comment" rows="8" cols="40"></textarea></p>
+            <p class="checkbox"><input type="checkbox" name="remember" value="" id="remember"> <label>Remember</label>
+            </p>
+          </fieldset>
+
+          <p><input type="submit" name="submit" value="Save" class="button"></p>
+        </form>
+      </div>
+      <div id="resources">
+        <h3>Commodo consequat</h3>
+        <ul>
+          <li><a href="#">Consectetur adipisicing elit</a> sed do eiusmod tempor incididunt ut labore.</li>
+          <li><a href="#">Quis nostrud exercitation</a> ullamco laboris nisi ut aliquip</li>
+        </ul>
+
+        <ul>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Consectetur adipisicing elit</li>
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Ut enim ad minim veniam</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="footer">
+      <ul class="tabs">
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Ipsum</a></li>
+        <li><a href="#">Dolor</a></li>
+        <li><a href="#">Consectetur</a></li>
+        <li><a href="#">Eiusmod</a></li>
+      </ul>
+
+      <p class="quiet"><small>Creative Commons License</small></p>
+    </div>
+  </div>
+
+</body>
+
+</html>
