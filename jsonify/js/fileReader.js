@@ -87,6 +87,5 @@ document.querySelector('.saveButton')
     const filename =`${store.filename}.json`;
     const file = new Blob([text], {type: "application/json"})
     saveAs(file, filename)
-    display.textContent = output;
     console.log(output);
   })
