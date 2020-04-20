@@ -76,5 +76,6 @@ padding: 10px; background: rgba(235, 235, 245, 1);
  width: 350px;
  height: 400px;
  overflow: auto;
+ flex-shrink: 1;
 
 }
