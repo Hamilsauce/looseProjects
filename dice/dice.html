@@ -5,28 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./dice.css" type="text/css" media="all" />
-    <title></title>
+    <title>Roll some dice</title>
 </head>
 
 <body>
+  <header class="app-header">
+    <h1 class="app-title">Horses!</h1>
+    <p class="subtitle">Click the roll button, select the dice you want to keep, confirm by clicking Keep Selected, roll again.</p>
+  </header>
+  <main class="app">
+    <section class="action-bar">
 <input type="button" name="rollButton" class="rollButton" value="Roll" />
 <input type="button" name="keepButton" class="keepButton" value="Keep selected" />
-  <div class="scoreDisplay">
-    
-  </div>
-  <ul class="rollDisplay">
-  </ul>
-  
-  <section class="text-container" >
-<input type="range" name="" class="rangeInput" value="12" min="8"  max="32" />
-    <div class="textDiv" contenteditable="true">
-       passed event exists in our collection. 
-       If not, we return an empty array. 
-       No dramas. If there is an event, we
-    </div>
-  </section>
-  <script src="./dice.js" type="text/javascript" charset="utf-8"></script>
-  <script src="./d2.js" type="text/javascript" charset="utf-8"></script>
+      
+    </section>
+    <section class="table">
+  <div class="scoreDisplay"></div></div>
+  <ul class="rollDisplay"></ul>
+    </section>
+  </main>
+  <script src="./main.js" type="module" charset="utf-8"></script>
 </body>
 
 </html>
