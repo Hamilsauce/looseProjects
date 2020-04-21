@@ -1,8 +1,9 @@
 export class Die {
-  constructor(id) {
+  constructor(id, diceSet) {
     this.id = id,
-      this.value = null,
-      this.kept = false
+    this.value = null,
+    this.kept = false,
+    this.diceSet = diceSet
   }
   roll(min, max) {
     if (this.kept === true) {
@@ -42,8 +43,8 @@ export class Die {
     let el = document.querySelector(`.checkbox-${this.id}`);
     el.addEventListener('change', e => {
       console.log('click');
-      let keptDice = diceSet.keptDice();
-      let selectedDice = diceSet.selectedDice();
+      let keptDice = this.diceSet.keptDice();
+      let selectedDice = this.diceSet.selectedDice();
 
       let keptCheck = keptDice.every(d => {
         return d.value === this.value;
@@ -52,7 +53,7 @@ export class Die {
         return d.value === this.value;
       })
 
-      if (keptCheck === false || selectedCheck === false && !selectedDice.length == 0) {
+      if (keptCheck === false || selectedCheck === false && selectedDice.length !== 0) {
         el.checked = false;
         el.classList.add('noMatch');
         console.log('must pick previously kept die val');
@@ -66,7 +67,6 @@ export class Die {
 
         this.selected = false;
       }
-      console.log(diceSet.selectedDice());
     })
   }
   keep() {

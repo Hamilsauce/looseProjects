@@ -2,7 +2,7 @@ import {DiceSet} from './js/DiceSet.js';
 import {Die} from './js/Die.js';
 
 
-const diceSet = new Diceset(5);
+const diceSet = new DiceSet(5);
 
 let diceCount = 5 - diceSet.keptDice().length;
 let rollCount = 0;

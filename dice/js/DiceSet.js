@@ -1,9 +1,9 @@
-import {Die} from './Dice.js'
+import { Die } from './Die.js'
 
-export class Diceset {
+export class DiceSet {
   constructor(diceCount) {
     this.diceCount = diceCount,
-      this.dice = this.createDice(this.diceCount).map(die => new Die(die)),
+      this.dice = this.createDice(this.diceCount).map(die => new Die(die, this)),
       this.keptCount = 0,
       this.selectedValue = null
   }
@@ -74,4 +74,4 @@ export class Diceset {
   }
 }
 
-{Diceset}
+{DiceSet}
