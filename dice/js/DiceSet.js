@@ -1,4 +1,6 @@
-import { Die } from './Die.js'
+import {
+  Die
+} from './Die.js'
 
 export class DiceSet {
   constructor(diceCount) {
@@ -26,14 +28,19 @@ export class DiceSet {
     parent.innerHTML = output;
 
     dice.forEach(die => {
+      let dieVal = document.querySelector(`.${die.id}Value`)
       let selector = `checkbox-${die.id}`;
       let checkbox = document.querySelector(`.${selector}`);
       if (die.kept == false) {
         die.registerEventListener(selector);
+        dieVal.classList.toggle('dieValue')
+        dieVal.classList.toggle('dieValue')
+        // document.querySelector(`.${die.id}Value`).classList.toggle('dieValue')
       } else {
         checkbox.classList.add('kept');
         checkbox.disabled = true;
       }
+      setTimeout(() => {}, 500);
     })
   }
   keptDice() {
@@ -74,4 +81,6 @@ export class DiceSet {
   }
 }
 
-{DiceSet}
+{
+  DiceSet
+}

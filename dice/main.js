@@ -1,5 +1,9 @@
-import {DiceSet} from './js/DiceSet.js';
-import {Die} from './js/Die.js';
+import {
+  DiceSet
+} from './js/DiceSet.js';
+import {
+  Die
+} from './js/Die.js';
 
 
 const diceSet = new DiceSet(5);
@@ -42,4 +46,9 @@ document.querySelector('.keepButton')
   .addEventListener('click', e => {
 
     diceSet.keepDice();
+  });
+
+document.querySelector('.nextPlayerButton')
+  .addEventListener('click', e => {
+    location.reload();
   });

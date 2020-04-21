@@ -1,9 +1,27 @@
 export class Die {
   constructor(id, diceSet) {
-    this.id = id,
-    this.value = null,
-    this.kept = false,
     this.diceSet = diceSet
+    this.id = id,
+      this.value = null,
+      this.kept = false,
+      this.idAsWord = this.createIdAsWord();
+  }
+  createIdAsWord() {
+    let idAsWord = '';
+    console.log(this.id);
+
+    if (this.id == 'die1') {
+      idAsWord = 'Die One';
+    } else if (this.id == 'die2') {
+      idAsWord = 'Die Two';
+    } else if (this.id == 'die3') {
+      idAsWord = 'Die Three';
+    } else if (this.id == 'die4') {
+      idAsWord = 'Die Four';
+    } else if (this.id == 'die5') {
+      idAsWord = 'Die Five';
+    }
+    return idAsWord;
   }
   roll(min, max) {
     if (this.kept === true) {
@@ -11,7 +29,7 @@ export class Die {
     } else {
       min = Math.ceil(min);
       max = Math.floor(max);
-      this.value = Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
+      this.value = Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
 
       this.createTemplate();
       return this.value;
@@ -21,14 +39,16 @@ export class Die {
     // let parent = document.querySelector(parentClass);
     if (this.kept === false) {
       let checkboxId = `checkbox-${this.id}`;
-      this.template = `
+      this.template = /*html */ `
       <li class="dieItem ${this.id}Item">
-        <label class="itemLabel" for="${checkboxId}">
-          <span class="dieLabel">${this.id}: </span><span class="dieValue">${this.value}</span>
-        </label>
-        <input 
+        <!-- <label class="itemLabel" for="${checkboxId}"> -->
+          <div class="label-div">
+            <div class="dieLabel">${this.idAsWord}: </div><div class="dieValue ${this.id}Value">${this.value}</div>
+          </div>
+        <!-- </label> -->
+        <input
           class="dieCheck ${checkboxId}"
-          type="checkbox" 
+          type="checkbox"
           value="${this.value}"
           data-die-id="${this.id}"
           data-die-value="${this.value}"
@@ -75,4 +95,6 @@ export class Die {
   }
 }
 
-{Die}
+{
+  Die
+}
