@@ -72,10 +72,10 @@ document.querySelector('.submitButton')
   .addEventListener('click', e => {
     e.preventDefault();
     const display = document.querySelector('.contentDisplay')
-    const output = csvToJson(store.fileText, ',');
+    const output = csvToJson(store.fileText, store.delim);
 
     display.textContent = output;
-    console.log(output);
+
   })
 
 document.querySelector('.saveButton')
@@ -87,5 +87,5 @@ document.querySelector('.saveButton')
     const filename =`${store.filename}.json`;
     const file = new Blob([text], {type: "application/json"})
     saveAs(file, filename)
-    console.log(output);
+
   })
