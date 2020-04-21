@@ -1,0 +1,17 @@
+.text-container{
+  padding: 0;
+  margin: auto;
+}
+.textDiv {
+  height: 50vh;
+  background: rgba(200, 200, 200, 0.0);
+  box-shadow: 0 0 56px inset #00000020;
+  padding: 5px;
+  margin: auto;
+  border: 2px solid rgba(200, 200, 200, 0.5)
+}
+.rangeInput {
+  background: rgba(200, 150, 150, 0.5);
+  box-shadow: 0 0 25px #000;
+  border: 1px solid red;
+}
