@@ -1,15 +1,9 @@
-function rollDie(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
-}
-
 class Diceset {
   constructor(diceCount) {
     this.diceCount = diceCount,
-    this.keptCount = this.getKeptCount(),
-      this.selectedValue = null,
-      this.dice = this.createDice(this.diceCount).map(die => new Die(die))
+      this.dice = this.createDice(this.diceCount).map(die => new Die(die)),
+      this.keptCount = 0,
+      this.selectedValue = null
   }
   createDice(count) {
     let dice = [];
@@ -19,8 +13,43 @@ class Diceset {
     };
     return dice
   }
+  renderRolls(dice, parentSelector) {
+    const parent = document.querySelector(`.${parentSelector}`);
+
+    let output = dice
+      .reduce((acc, curr) => {
+        return acc += curr.template;
+      }, '');
+
+    parent.innerHTML = output;
+
+    dice.forEach(die => {
+      let selector = `checkbox-${die.id}`
+      let checkbox = document.querySelector(`.${selector}`)
+      if (die.kept == false) {
+        die.registerEventListener(selector);
+      } else {
+        checkbox.classList.add('kept');
+        checkbox.disabled = true;
+      }
+    })
+  }
+  keptDice() {
+    let keptArray = this.dice
+      .filter(die => {
+        return die.kept === true
+      })
+    return keptArray;
+  }
+  selectedDice() {
+    let selected = this.dice
+      .filter(die => {
+        return die.selected === true
+      })
+    return selected;
+  }
   getKeptCount() {
-    let kept = Object.values(this.dice)
+    let kept = this.dice
       .reduce((sum, curr) => {
         if (curr.kept == true) {
           return sum += 1;
@@ -28,81 +57,173 @@ class Diceset {
           return sum += 0;
         }
       }, 0);
-    remaining
+    this.keptCount = kept;
+    return kept;
+  }
+  keepDice() {
+    this.dice.forEach(die => {
+      die.keep();
+    })
+  }
+  generateScore() {
+    let count = this.keptDice().length;
+    let value = this.keptDice()[0].value;
+    return `Player rolled ${count} ${value}'s`
   }
 }
+
+
 class Die {
   constructor(id) {
     this.id = id,
       this.value = null,
       this.kept = false
   }
-}
-const rollLimit = 3;
-let rolledDice = [];
-let keptDice = [];
+  roll(min, max) {
+    if (this.kept === true) {
+      return;
+    } else {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      this.value = Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
 
-//horses
-const playerTurn = () => {
-  const diceSet = new Diceset(5);
-  let diceCount = 5 - diceSet.getKeptCount()
-  console.log('dicecount',diceCount);;
-  let rollCount = 0;
-  
-
-  if (rollCount >= 3 || diceCount <= 0) {
-    console.log('no more rolls!');
-    return;
-  } else {
-    for (var i = 1; i <= diceCount; i++) {
-      let roll = rollDie(1, 6);
-      rolledDice.push(roll);
-      //rolledDice as an array of arrays: rolledDice.push([`die${i}`,roll]);
+      this.createTemplate();
+      return this.value;
     }
+  }
+  createTemplate() {
+    // let parent = document.querySelector(parentClass);
+    if (this.kept === false) {
+      let checkboxId = `checkbox-${this.id}`;
+      this.template = `
+      <li class="dieItem ${this.id}Item">
+        <label class="itemLabel" for="${checkboxId}">
+          <span class="dieLabel">${this.id}: </span><span class="dieValue">${this.value}</span>
+        </label>
+        <input 
+          class="dieCheck ${checkboxId}"
+          type="checkbox" 
+          value="${this.value}"
+          data-die-id="${this.id}"
+          data-die-value="${this.value}"
+          name="${checkboxId}"
+        />
+      </li>`;
+    } else {
+      this.template = this.template
+    }
+  }
+  registerEventListener() {
+    let el = document.querySelector(`.checkbox-${this.id}`);
+    el.addEventListener('change', e => {
+     console.log('click');
+      let keptDice = diceSet.keptDice();
+      let selectedDice = diceSet.selectedDice();
 
-    let rollResults = rolledDice
-      .reduce((obj, die, index) => {
-        obj[`die${index + 1}`] = die
-        return obj;
-      }, {})
-
-    renderRoll(rollResults)
+      let keptCheck = keptDice.every(d => {
+        return d.value === this.value;
+      })
+      let selectedCheck = selectedDice.every(d => {
+        return d.value === this.value;
+      })
+      
+      if (keptCheck === false || selectedCheck === false && !selectedDice.length == 0) {
+        el.checked = false
+        // el.disabled = true
+        /*class*/
+        el.classList.add('noMatch')
+        console.log('must pick previously kept die val');
+        this.selected = false;
+        return;
+      } else if (el.checked) {
+        el.disabled = false;
+        this.selected = true;
+      } else if (!el.checked) {
+        el.disabled = false;
+        
+        this.selected = false;
+      }
+      console.log(diceSet.selectedDice());
+    })
+  }
+  keep() {
+    this.selected == true ? this.kept = true : this.selected = false;
+    this.selected = false;
   }
 }
+const diceSet = new Diceset(5);
 
-const renderRoll = roll => {
-  const rollDisplay = document.querySelector('.rollDisplay')
+let diceCount = 5 - diceSet.keptDice().length;
+let rollCount = 0;
 
-  let output = Object.entries(roll)
-    .map(([die, value]) => {
-      let html = `
-        <li class="dieItem ${die}Item">
-          <label class="itemLabel" for="checkbox${die}">
-            <span class="dieId">${die}: </span><span class="dieValue">${value}</span>
-          </label>
-          <input 
-            class="dieCheck"
-            type="checkbox" 
-            value="${value}"
-            data-die="${die}"
-            data-die-value="${value}"
-            name="checkbox${die}"
-          />
-        </li>`;
-      return html;
-    })
-    .reduce((acc, curr) => {
-      return acc += curr;
-    }, '');
+//horses
+const playerTurn = (rollCount, diceCount) => {
+  console.log(diceSet);
+  const rollLimit = 3;
 
-  rollDisplay.innerHTML = output;
-  disableInvalidChoices();
+
+  if (rollCount >= rollLimit || diceSet.diceCount <= 0) {
+    console.log('no more rolls!');
+    let scoreDisplay = document.querySelector('.scoreDisplay')
+    let output = diceSet.generateScore();
+    scoreDisplay.textContent = output;
+    return;
+  } else {
+    diceSet.dice.forEach(die => {
+      if (die.kept === true) {
+        return;
+      }
+      die.roll(1, 6, 'rollDisplay');
+    });
+    diceSet.renderRolls(diceSet.dice, 'rollDisplay')
+
+    // diceSet.dice.forEach(die => {
+    //   die.roll(1, 6, 'rollDisplay');
+    // });
+
+  }
 
 }
 
-const keepDice = () => {
-  let arr = [];
-  let newVal = 3;
+
+document.querySelector('.rollButton')
+  .addEventListener('click', e => {
+    diceCount = 5 - diceSet.keptDice().length;
+    playerTurn(rollCount, diceCount);
+
+    rollCount += 1;
+  })
+document.querySelector('.keepButton')
+  .addEventListener('click', e => {
+
+  diceSet.keepDice();
+  })
+/*
+const dieItems = document.querySelectorAll('.dieCheck');
+dieItems.forEach(item => {
+  item.addEventListener('change', e => {
+    let dieValue = item.value
+    let keptDice = diceSet.keptDice();
+    
+    let matchCheck = keptDice.every(el => {
+      return el.value === dieValue;
+    })
+    if (matchCheck === false) {
+      item.checked = false
+      item.disabled == true
+      item.classList.add('noMatch')
+    }
+
+    console.log(keptDice);
+    console.log(item.value);
+  })
+
+
+*/
+
+
+/*
+const diceSelection = () => {
 
   let matchCheck = arr.every(item => {
     return item === newVal;
@@ -138,6 +259,4 @@ const disableInvalidChoices = () => {
 
   })
 }
-
-playerTurn()
-// keepDice()
+*/

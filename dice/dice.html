@@ -4,27 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
     <link rel="stylesheet" href="./dice.css" type="text/css" media="all" />
+    <title></title>
 </head>
 
 <body>
-  <input type="button" name="rollButton" class="rollButton" value="Roll" />
-    <input type="range" name="" class="rangeInput" value="12" min="8"  max="32" />
+<input type="button" name="rollButton" class="rollButton" value="Roll" />
+<input type="button" name="keepButton" class="keepButton" value="Keep selected" />
+  <div class="scoreDisplay">
+    
+  </div>
   <ul class="rollDisplay">
-    <li class="die die0">
-      <label for="die0">die0: 5</label>
-      <input 
-        type="checkbox" 
-        name="die0" value="5"/>
-    </li>
-    <li class="die die2"></li>
-    <li class="die die3"></li>
-    <li class="die die4"></li>
-    <li class="die die5"></li>
   </ul>
   
   <section class="text-container" >
+<input type="range" name="" class="rangeInput" value="12" min="8"  max="32" />
     <div class="textDiv" contenteditable="true">
        passed event exists in our collection. 
        If not, we return an empty array. 
