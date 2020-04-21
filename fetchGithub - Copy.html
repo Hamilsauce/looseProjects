@@ -60,13 +60,24 @@ document.querySelector('.postSongsData').addEventListener('click', e => {
     e.preventDefault();
     const dataDiv = document.querySelector('.data-display');
 
-    fetch('https://cors-anywhere.herokuapp.com/https://hamilsauce.github.io/audio/SongData.json', {
+    fetch('https://cors-anywhere.herokuapp.com/https://api.github.com/repos/hamilsauce/music-library-app/contents/audio/songData.js,
+
+   // https://hamilsauce.github.io/audio/SongData.json', {
+   
         method: 'PUT',
         headers: {
-            'Content-Type': 'application/json',
+          "message": "my commit message", 
+          "committer": { 
+            "name": "Jacob Hamilton",/
+            "email": "jake@seahag.onmicrosoft.com" 
+            }, 
+          "content": "bXkgbmV3IGZpbGUgY29udGVudHM=" }
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(reposData)
+// "httpjake@seahag.onmicrosoft.com/repos/octocat/Hello-World/contents/notes/hello.txt",
 
+PUT /repos/:owner/:repo/contents/:path
     })
     .then(res => res.json())
     .then(data => {
