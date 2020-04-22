@@ -26,6 +26,15 @@ const fileFactory = (filename, ext, fileContent) => {
     filename: blobName
   }
 }
+
+const getFileParts = url => {
+  let [fileName, ext] = url.substr(url.lastIndexOf("/") + 1).split('.');
+  let fileExt = '.'.concat(ext);
+  return {
+    filename: fileName,
+    fileExtension: fileExt
+  }
+}
 document.querySelector('#btn-save').addEventListener('click', e => {
   e.preventDefault();
   const urlInput = document.querySelector('#urlAddress');
@@ -99,39 +108,8 @@ const saveFromUrl = (url) => {
 }
 
 
-fileParts.fileContent = fileContent;
-
-const newFile = fileFactory(fileParts.filename, fileParts.fileExtension, fileParts.fileContent)
-saveAs(newFile.file, newFile.filename)
-
-
-
-
-
-
 
 // const fileContent = JSON.stringify(data);
 // const fileContent = JSON.stringify(data, null, 2);
 // const fileParts = getFileParts(url);
 // fileParts.fileContent = fileContent;
-
-
-let fuck = html`
-<div class="form-group grid-cells">
-  <label for="textarea">Content</label>
-  <textarea id="textarea" class="form-control" rows="10"
-    placeholder="Enter text to save">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iure ab voluptate sunt reiciendis, officia, aliquam temporibus. Quo laudantium quaerat ad, deleniti optio ex, dignissimos, ea accusamus placeat tempora minima!</textarea>
-</div>
-`
-
-
-
-
-const getFileParts = url => {
-  let [fileName, ext] = url.substr(url.lastIndexOf("/") + 1).split('.');
-  let fileExt = '.'.concat(ext);
-  return {
-    filename: fileName,
-    fileExtension: fileExt
-  }
-}
