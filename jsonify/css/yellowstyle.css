@@ -1,0 +1,203 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  text-rendering: optimizelegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-text-size-adjust: none;
+  background: rgb(151, 150, 146);
+  color: white;
+
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* #app {
+  box-sizing: border-box;
+  display: grid;
+  max-width: 30em;
+  grid-template-rows: 80px 1fr 3fr 50px;
+  box-shadow: 0 0 140px 8px inset rgba(92, 97, 67, 0.521);
+  margin: 0em auto;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  padding: 0px;
+  border-right: 2px solid rgb(73, 73, 73);
+  border-left: 2px solid rgb(73, 73, 73);
+
+
+} */
+
+.app {
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px 1fr 3fr;
+  gap: 10px;
+  margin: 0em auto;
+  padding: 0px;
+  justify-content: center;
+  max-width: 500px;
+  height: 100vh;
+
+  border-right: 2px solid rgb(73, 73, 73);
+  border-left: 2px solid rgb(73, 73, 73);
+  background: rgba(146, 124, 69, 0.658);
+  box-shadow: 0 0 140px 8px inset rgba(92, 97, 67, 0.521);
+}
+
+.appHeader {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+
+}
+
+.title {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 10px;
+  width: 100%;
+  box-shadow: 0 3px 8px 1px rgba(34, 32, 20, 0.5);
+  color: rgba(255, 255, 255, 0.863);
+  background: rgba(30, 51, 75, 0.616);
+  border-bottom: 2px solid rgba(60, 25, 65, 0.3);
+  text-shadow: 0px 5px 25px rgba(53, 72, 93, 0.74);
+}
+
+.subtitle {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 15px;
+}
+
+.appBody {
+  height: 90vh;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.formContainer {
+  margin: 5px 15px;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 20px rgba(15, 12, 6, 0.534);
+  background: rgba(44, 44, 44, 0.404);
+  border-radius: 3px;
+  border: 1px solid rgba(15, 12, 6, 0.534);
+  box-shadow: 0 3px 12px 1px rgba(34, 32, 20, 0.5);
+  height: fit-content;
+
+}
+
+.userform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 0px 15px; */
+  /* padding: 10px; */
+  width: 100%;
+}
+
+.delimContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.delimInput {
+  font-size: 1em;
+  margin: 0px 5px 0px 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.controlContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+}
+
+.submitContainer {}
+
+.filePicker {
+  padding: 0px 0;
+  margin: 0;
+  width: fit-content;
+}
+
+.submitButton {
+  margin: 5px 0 5px auto;
+
+
+}
+
+.customInputContainer {
+  opacity: 0;
+  margin: 0px 0px 10px 0px;
+  padding: 0px 0px;
+}
+
+.customInputContainer.show {
+  /* display: flex;
+  flex-direction: column;
+  padding: 0px;
+  align-content: center; */
+  opacity: 1;
+}
+
+.label {
+  padding: 0px;
+  margin: 0px;
+}
+
+.customInput {
+  width: 65px;
+  margin: 0px 15px;
+  padding: 3px;
+}
+
+.customInput.show {
+  display: block;
+}
+
+.contentContainer {
+  box-sizing: border-box;
+  width: 325px;
+  height: 375px;
+  overflow: auto;
+
+}
+
+.contentContainer {
+  /* box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  margin: auto;
+  padding: 10px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 20px rgba(15, 12, 6, 0.534);
+  background: rgba(44, 44, 44, 0.404);
+  border-radius: 3px;
+  border: 1px solid rgba(15, 12, 6, 0.534);
+  box-shadow: 0 3px 12px 1px rgba(34, 32, 20, 0.5);
+}
