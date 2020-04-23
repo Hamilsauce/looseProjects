@@ -66,16 +66,16 @@ const updateOutput = (color, value) => {
 //! select text content, dont delete
 //*textDiv.addEventListener('click', e => selectText(textDiv))
 
-//*const selectText = (element) => {
-//*  if (document.body.createTextRange) {
-//*    let range = document.body.createTextRange();
-//*    range.moveToElementText(textDiv);
-//*    range.select();
-//*  } else if (window.getSelection) {
-//*    let selection = window.getSelection();
-//*    let range = document.createRange();
-//*    range.selectNodeContents(textDiv);
-//*    selection.removeAllRanges();
-//*    selection.addRange(range);
-//*  }
-//*}
+const selectText = (element) => {
+  if (document.body.createTextRange) {
+    let range = document.body.createTextRange();
+    range.moveToElementText(textDiv);
+    range.select();
+  } else if (window.getSelection) {
+    let selection = window.getSelection();
+    let range = document.createRange();
+    range.selectNodeContents(textDiv);
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }
+}
