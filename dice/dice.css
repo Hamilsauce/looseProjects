@@ -40,14 +40,14 @@ h1 {
   padding: 3px 40px;
   margin: 5px auto;
   list-style: none;
-  background: rgb(97, 128, 136);
+  background: rgb(255, 255, 255);
   width: 100%;
   min-height: 400px;
   /* max-height: 470px; */
 }
 
 .button-container {
-  background: rgb(43, 134, 156);
+  background: rgb(187, 187, 187);
 
   transition: transform 1s 0.5s ease-out;
   /* transform: scale(1.2); */
@@ -64,7 +64,7 @@ h1 {
   background: rgba(220, 229, 236, 0.767);
   font-size: 1.1em;
   font-weight: 500;
-  background: rgba(97, 128, 136);
+  background: rgb(230, 230, 230);
 
   color: rgb(29, 24, 24);
 }
@@ -79,7 +79,7 @@ h1 {
   margin: auto;
   padding: 10px 20px;
   max-width: 450px;
-  background: rgba(220, 229, 236, 0.767);
+  background: rgba(125, 156, 180, 0.767);
   border-left: 2px solid white;
   border-right: 2px solid white;
   font-size: 1.2em;

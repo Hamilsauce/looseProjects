@@ -15,49 +15,15 @@ const fileFactory = (filename, ext, fileContent) => {
       return fileType;
     }
   }
-
   let blobName = `${filename}${ext}`
   let file = new Blob([fileContent], {
     type: fileTypeKey.getFileType(ext)
   });
-
   return {
     file: file,
     filename: blobName
   }
 }
-
-const getFileParts = url => {
-  let [fileName, ext] = url.substr(url.lastIndexOf("/") + 1).split('.');
-  let fileExt = '.'.concat(ext);
-  return {
-    filename: fileName,
-    fileExtension: fileExt
-  }
-}
-document.querySelector('#btn-save').addEventListener('click', e => {
-  e.preventDefault();
-  const urlInput = document.querySelector('#urlAddress');
-  const fileUrl = document.querySelector('#urlAddress').value;
-
-  if (fileUrl.trim().length !== 0) {
-    try {
-      saveFromUrl(fileUrl);
-    } catch (e) {
-      let errorMsg = e.name + ': ' + e.message;
-      alert(errorMsg);
-      return
-    }
-  } else {
-    try {
-      saveFile();
-    } catch (e) {
-      let errorMsg = e.name + ': ' + e.message;
-      alert(errorMsg);
-      return
-    }
-  }
-})
 
 const saveFile = () => {
   const fileNameInput = document.querySelector('#input-fileName');
@@ -72,10 +38,19 @@ const saveFile = () => {
   saveAs(newFile.file, newFile.filename)
 }
 
+const getFileParts = url => {
+  let [fileName, ext] = url.substr(url.lastIndexOf("/") + 1).split('.');
+  let fileExt = '.'.concat(ext);
+  return {
+    filename: fileName,
+    fileExtension: fileExt
+  }
+}
+
 const saveFromUrl = (url) => {
   const fileParts = getFileParts(url);
 
-  if (fileParts.fileExtension == '.txt') {
+  if (fileParts.fileExtension == '.txt' || fileParts.fileExtension == '.csv' || fileParts.fileExtension == '.html') {
     fetch(url)
       .then(res => res.text())
       .then(data => {
@@ -106,6 +81,38 @@ const saveFromUrl = (url) => {
   }
 
 }
+document.querySelector('#btn-save').addEventListener('click', e => {
+  e.preventDefault();
+  const urlInput = document.querySelector('#urlAddress');
+  const fileUrl = document.querySelector('#urlAddress').value;
+
+  if (fileUrl.trim().length !== 0) {
+    try {
+      saveFromUrl(fileUrl);
+    } catch (e) {
+      let errorMsg = e.name + ': ' + e.message;
+      alert(errorMsg);
+      return
+    }
+  } else {
+    try {
+      saveFile();
+    } catch (e) {
+      let errorMsg = e.name + ': ' + e.message;
+      alert(errorMsg);
+      return
+    }
+  }
+})
+
+// fileParts.fileContent = fileContent;
+
+// const newFile = fileFactory(fileParts.filename, fileParts.fileExtension, fileParts.fileContent)
+// saveAs(newFile.file, newFile.filename)
+
+
+
+
 
 
 

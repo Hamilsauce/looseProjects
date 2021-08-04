@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <title>Text Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./editor.css">
+  <script src="https://unpkg.com/vue@latest"></script>
+
+</head>
+<div id="app">
+  <header class="app-header">
+    <div class="title">noteguy</div>
+    <div class="app-menu">
+      <div class="button">New</div>
+    </div>
+  </header>
+  <div class="page">
+    <div class="note">
+      <div class="note-toolbar">
+        <div class="button">Save</div>
+        <div class="button">Delete</div>
+      </div>
+      <div class="heading" v-model="title" contenteditable="true"></div>
+      <div class="content" v-model="content" contenteditable="true"></div>
+      <div class="date" contenteditable="false"></div>
+    </div>
+    <div class="note">
+      <div class="note-toolbar">
+        <div class="button">Save</div>
+        <div class="button">Delete</div>
+      </div>
+      <div class="heading" v-model="title" contenteditable="true"></div>
+      <div class="content" v-model="content" contenteditable="true"></div>
+      <div class="date" contenteditable="false"></div>
+    </div>
+    <div class="note">
+      <div class="note-toolbar">
+        <div class="button">Save</div>
+        <div class="button">Delete</div>
+      </div>
+      <div class="heading" v-model="title" contenteditable="true"></div>
+      <div class="content" v-model="content" contenteditable="true"></div>
+      <div class="date" contenteditable="false"></div>
+    </div>
+    <div class="note">
+      <div class="note-toolbar">
+        <div class="button">Save</div>
+        <div class="button">Delete</div>
+      </div>
+      <div class="heading" v-model="title" contenteditable="true"></div>
+      <div class="content" v-model="content" contenteditable="true"></div>
+      <div class="date" contenteditable="false"></div>
+    </div>
+  </div>
+  <script type="text/x-template" id="datacard-template">
+   <section class="note">
+     <div v-if="gotClicked" class="note-toolbar">
+       <div class="button">Save</div>
+       <div class="button">Delete</div>
+     </div>
+     <div class="heading" v-model="title" contenteditable="true"></div>
+     <div class="content" v-model="content" contenteditable="true"></div>
+     <div class="date" contenteditable="false"></div>
+   </section>
+  </script>
+  <script src="./app.js" type="module" charset="utf-8"></script>
+  <script src="./editor.js" type="module" charset="utf-8"></script>
+  <script>
+  </script>
+
+</html>

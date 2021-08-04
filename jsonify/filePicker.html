@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <!-- <link rel="stylesheet" href="./css/styles.css" type="text/css" /> -->
   <link rel="stylesheet" href="./css/yellowstyle.css" type="text/css" />
 
 </head>
@@ -13,29 +12,25 @@
 <body>
   <main class="app">
     <header class="appHeader">
-      <h1 class="title">Jsonify</h1>
+      <h1>Jsonify</h1>
       <p class="subtitle">
         Pick a text file, enter how its delimited.
       </p>
     </header>
     <div class="formContainer">
       <form class="userform">
-        <div class="delimContainer">
-          <div class="controlContainer">
-            <label for="delimInput">Pick a delimiter</label>
-            <select name="delimInput" id="delimInput" class="delimInput" value=",">
-              <option value=","></option>
-              <option value=",">comma</option>
-              <option value="\t">tab</option>
-              <option value=" ">space</option>
-              <option value="custom">custom</option>
-            </select>
-          </div>
+        <label for="delimInput">Pick a delimiter</label>
+        <select name="delimInput" id="delimInput" class="delimInput" value=",">
+          <option value=","></option>
+          <option value=",">comma</option>
+          <option value="\t">tab</option>
+          <option value=" ">space</option>
+          <option value="custom">custom</option>
+        </select>
 
-          <div class="customInputContainer">
-            <label for="customInput">Enter Delimiter</label>
-            <input type="text" name="customInput" class="customInput" id="customInput" value="" />
-          </div>
+        <div class="customInputContainer">
+          <label for="customInput">Enter Delimiter</label>
+          <input type="text" name="customInput" class="customInput" id="customInput" value="" />
         </div>
         <label for="filePicker"></label>
         <input class="filePicker" type="file" name="filePicker" id="filePicker" value="" />

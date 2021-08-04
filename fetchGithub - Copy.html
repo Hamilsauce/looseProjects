@@ -21,74 +21,82 @@
         </div>
     </section>
 <script>
-let reposData;
-const updateDisplay = data => {
-    document.querySelector('.data-display').textContent = data;
-}
+// let reposData;
+// const updateDisplay = data => {
+//     document.querySelector('.data-display').textContent = data;
+// }
 
-fetch('https://api.github.com/users/Hamilsauce/repos')
-    .then(response => response.json())
-    .then(data => {
-        reposData = data;
-    })
+// fetch('https://api.github.com/users/Hamilsauce/repos')
+//     .then(response => response.json())
+//     .then(data => {
+//         reposData = data;
+//     })
 
-document.querySelector('.getAudioFolder').addEventListener('click', e => {
-    e.preventDefault();
-    const dataDiv = document.querySelector('.data-display');
+// document.querySelector('.getAudioFolder').addEventListener('click', e => {
+//     e.preventDefault();
+//     const dataDiv = document.querySelector('.data-display');
 
-    fetch('https://api.github.com/repos/Hamilsauce/hamilsauce.github.io/contents/audio')
+//     fetch('https://api.github.com/repos/Hamilsauce/hamilsauce.github.io/contents/')
+//         .then(response => response.json())
+//         .then(data => {
+//             reposData = data;
+//             console.log(reposData);
+//         })
+// })
+// document.querySelector('.getSongData').addEventListener('click', e => {
+//     e.preventDefault();
+//     const dataDiv = document.querySelector('.data-display');
+
+//     fetch('https://hamilsauce.github.io/audio/SongData.json')
+//         .then(response => response.json())
+//         .then(data => {
+//             // reposData = data;
+//             console.log(data);
+//             reposData = data;
+//             updateDisplay(reposData);
+//         })
+// })
+
+
+
+
+// document.querySelector('.postSongsData').addEventListener('click', e => {
+//     e.preventDefault();
+//     const dataDiv = document.querySelector('.data-display');
+
+//     fetch('https://cors-anywhere.herokuapp.com/https://api.github.com/repos/hamilsauce/music-library-app/contents/audio/songData.js,
+
+//    // https://hamilsauce.github.io/audio/SongData.json', {
+
+//         method: 'PUT',
+//         headers: {
+//           "message": "my commit message",
+//           "committer": {
+//             "name": "Jacob Hamilton",/
+//             "email": "jake@seahag.onmicrosoft.com"
+//             },
+//           "content": "bXkgbmV3IGZpbGUgY29udGVudHM=" }
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(reposData)
+// // "httpjake@seahag.onmicrosoft.com/repos/octocat/Hello-World/contents/notes/hello.txt",
+
+// PUT /repos/:owner/:repo/contents/:path
+//     })
+//     .then(res => res.json())
+//     .then(data => {
+//         console.log('success', data);
+//     })
+//     .catch(error => {
+//         console.error('error', error);
+//     });
+// })
+    fetch('https://api.github.com/repos/Hamilsauce/hamilsauce.github.io/contents/')
         .then(response => response.json())
         .then(data => {
             reposData = data;
             console.log(reposData);
         })
-})
-document.querySelector('.getSongData').addEventListener('click', e => {
-    e.preventDefault();
-    const dataDiv = document.querySelector('.data-display');
-
-    fetch('https://hamilsauce.github.io/audio/SongData.json')
-        .then(response => response.json())
-        .then(data => {
-            // reposData = data;
-            console.log(data);
-            reposData = data;
-            updateDisplay(reposData);
-        })
-})
-document.querySelector('.postSongsData').addEventListener('click', e => {
-    e.preventDefault();
-    const dataDiv = document.querySelector('.data-display');
-
-    fetch('https://cors-anywhere.herokuapp.com/https://api.github.com/repos/hamilsauce/music-library-app/contents/audio/songData.js,
-
-   // https://hamilsauce.github.io/audio/SongData.json', {
-   
-        method: 'PUT',
-        headers: {
-          "message": "my commit message", 
-          "committer": { 
-            "name": "Jacob Hamilton",/
-            "email": "jake@seahag.onmicrosoft.com" 
-            }, 
-          "content": "bXkgbmV3IGZpbGUgY29udGVudHM=" }
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(reposData)
-// "httpjake@seahag.onmicrosoft.com/repos/octocat/Hello-World/contents/notes/hello.txt",
-
-PUT /repos/:owner/:repo/contents/:path
-    })
-    .then(res => res.json())
-    .then(data => {
-        console.log('success', data);
-    })
-    .catch(error => {
-        console.error('error', error);
-    });
-})
-
-
 </script>
 </body>
 </html>

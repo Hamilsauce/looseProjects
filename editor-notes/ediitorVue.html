@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <title>Text Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./editor.css">
+  <script src="https://unpkg.com/vue@latest"></script>
+</head>
+<div id="app">
+  <!-- <div class="collection"></div> -->
+  <note v-for="note in notes" :key="note.id" :storedNote="note">
+  </note>
+</div>
+<!-- <section class="note">
+  <div class="note-toolbar">
+    <div class="button">Save</div>
+    <div class="button">Delete</div>
+  </div>
+  <div class="heading" v-model="title" contenteditable="true"></div>
+  <div class="content" v-model="content" contenteditable="true"></div>
+  <div class="date" contenteditable="false"></div>
+</section> -->
+
+<!-- template -->
+<script type="text/x-template" id="note-template">
+<section v-if="gotClicked" class="note">
+    <div class="note-toolbar">
+      <div class="button">Save</div>
+      <div class="button">Delete</div>
+    </div>
+    <div class="heading" contenteditable="true">{{storedNote.title}}</div>
+    <div class="content" contenteditable="true"></div>
+    <div class="date" contenteditable="false"></div>
+  </section>
+  </script>
+
+<script src="./app.js" type="module" charset="utf-8"></script>
+<!-- <script src="./editor.js" type="module" charset="utf-8"></script> -->
+<script>
+</script>
+
+</html>
